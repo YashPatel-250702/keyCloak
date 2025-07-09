@@ -50,7 +50,10 @@ public class OidcController {
 
         if (email == null) {
             // Redirect to login (your frontend login page or API)
-            String loginRedirect = "d1sq67t1c2pewz.cloudfront.net/candidate" + URLEncoder.encode(request.getRequestURL().toString(), "UTF-8");
+        	String loginRedirect = "https://d1sq67t1c2pewz.cloudfront.net/candidate?redirect=" 
+        		    + URLEncoder.encode(request.getRequestURL().toString() + "?" + request.getQueryString(), "UTF-8");
+        		response.sendRedirect(loginRedirect);
+
             response.sendRedirect(loginRedirect);
             return;
         }
