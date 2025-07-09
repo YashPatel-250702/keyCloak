@@ -1,0 +1,406 @@
+09-09-2024_14:36:07.246{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+09-09-2024_14:36:07.284{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 17.0.11 on SYMP-LT1100 with PID 10676 (C:\Users\NAGUL\Desktop\New folder\TalentStreamBE\target\classes started by NAGUL in C:\Users\NAGUL\Desktop\New folder\TalentStreamBE)
+09-09-2024_14:36:07.285{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+09-09-2024_14:36:07.286{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+09-09-2024_14:36:08.268{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-09-2024_14:36:08.388{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 109 ms. Found 21 JPA repository interfaces.
+09-09-2024_14:36:08.965{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+09-09-2024_14:36:08.974{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:36:08.974{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+09-09-2024_14:36:08.974{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+09-09-2024_14:36:09.125{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+09-09-2024_14:36:09.125{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 1782 ms
+09-09-2024_14:36:09.397{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+09-09-2024_14:36:09.447{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+09-09-2024_14:36:09.604{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09-09-2024_14:36:09.694{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+09-09-2024_14:36:10.363{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+09-09-2024_14:36:10.383{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+09-09-2024_14:36:14.978{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-09-2024_14:36:15.010{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-09-2024_14:36:16.036{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+09-09-2024_14:36:16.131{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-09-2024_14:36:16.741{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+09-09-2024_14:36:19.179{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a88e6a9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7b91e3d4, org.springframework.security.web.context.SecurityContextPersistenceFilter@3118ed2c, org.springframework.security.web.header.HeaderWriterFilter@2c48eb31, org.springframework.security.web.authentication.logout.LogoutFilter@1b0709e7, com.talentstream.filter.JwtRequestFilter@41db6e4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28fa0ff8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c2c1790, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20bc72af, org.springframework.security.web.session.SessionManagementFilter@6970687e, org.springframework.security.web.access.ExceptionTranslationFilter@685a3c14, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dec84e3]
+09-09-2024_14:36:19.627{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:36:19.679{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+09-09-2024_14:36:21.547{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 14.86 seconds (JVM running for 15.824)
+09-09-2024_14:36:21.690{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-09-2024_14:36:21.690{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+09-09-2024_14:36:21.690{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 0 ms
+09-09-2024_14:36:21.722{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+09-09-2024_14:36:21.722{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+09-09-2024_14:36:21.722{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+09-09-2024_14:37:09.051{UTC}|report-tool|ERROR||o.a.c.c.C.[.[.[.[dispatcherServlet]|Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2024-09-06T21:39:00Z. Current time: 2024-09-09T14:37:09Z, a difference of 233889051 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.talentstream.service.JwtUtil.extractAllClaims(JwtUtil.java:33)
+	at com.talentstream.service.JwtUtil.extractClaim(JwtUtil.java:29)
+	at com.talentstream.service.JwtUtil.extractUsername(JwtUtil.java:21)
+	at com.talentstream.filter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+09-09-2024_14:37:31.949{UTC}|report-tool|ERROR||o.a.c.c.C.[.[.[.[dispatcherServlet]|Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2024-09-06T21:39:00Z. Current time: 2024-09-09T14:37:31Z, a difference of 233911949 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.talentstream.service.JwtUtil.extractAllClaims(JwtUtil.java:33)
+	at com.talentstream.service.JwtUtil.extractClaim(JwtUtil.java:29)
+	at com.talentstream.service.JwtUtil.extractUsername(JwtUtil.java:21)
+	at com.talentstream.filter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+09-09-2024_14:37:41.669{UTC}|report-tool|ERROR||o.a.c.c.C.[.[.[.[dispatcherServlet]|Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2024-09-06T21:39:00Z. Current time: 2024-09-09T14:37:41Z, a difference of 233921669 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.talentstream.service.JwtUtil.extractAllClaims(JwtUtil.java:33)
+	at com.talentstream.service.JwtUtil.extractClaim(JwtUtil.java:29)
+	at com.talentstream.service.JwtUtil.extractUsername(JwtUtil.java:21)
+	at com.talentstream.filter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+09-09-2024_14:37:58.276{UTC}|report-tool|ERROR||o.a.c.c.C.[.[.[.[dispatcherServlet]|Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.ExpiredJwtException: JWT expired at 2024-09-06T21:39:00Z. Current time: 2024-09-09T14:37:58Z, a difference of 233938275 milliseconds.  Allowed clock skew: 0 milliseconds.
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:385)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:481)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at com.talentstream.service.JwtUtil.extractAllClaims(JwtUtil.java:33)
+	at com.talentstream.service.JwtUtil.extractClaim(JwtUtil.java:29)
+	at com.talentstream.service.JwtUtil.extractUsername(JwtUtil.java:21)
+	at com.talentstream.filter.JwtRequestFilter.doFilterInternal(JwtRequestFilter.java:89)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+09-09-2024_14:38:40.966{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+09-09-2024_14:38:40.966{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+09-09-2024_14:38:40.966{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+09-09-2024_14:38:41.092{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Attempting to login with email: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.107{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Handling Google Sign-In for email: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.242{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Google Sign-In successful for: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.456{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.456{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.456{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.456{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 12342
+09-09-2024_14:38:41.569{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+09-09-2024_14:38:41.569{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+09-09-2024_14:38:41.569{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+09-09-2024_14:38:41.677{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+09-09-2024_14:38:41.677{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+09-09-2024_14:38:41.677{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.772{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.772{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 12342
+09-09-2024_14:38:41.772{UTC}|report-tool|INFO ||c.t.c.FindRecommendedJobController|Count of recommended jobs for applicant {} retrieved successfully: {}
+09-09-2024_14:38:41.781{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 12342
+09-09-2024_14:38:41.781{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.781{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.781{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.781{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 12342
+09-09-2024_14:38:41.789{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+09-09-2024_14:38:41.789{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+09-09-2024_14:38:41.789{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+09-09-2024_14:38:41.799{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.799{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.799{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.800{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 12342: 0
+09-09-2024_14:38:41.801{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to count applied jobs for applicantId: 12342
+09-09-2024_14:38:41.886{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Counted applied jobs successfully for applicantId: 12342
+09-09-2024_14:38:41.893{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.893{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.893{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.893{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 12342
+09-09-2024_14:38:41.956{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.956{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.956{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.990{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.990{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.990{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.990{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.990{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:41.990{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:41.992{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get unread alert count for applicant 12342
+09-09-2024_14:38:41.992{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile ID for applicantId: 12342
+09-09-2024_14:38:42.015{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved unread alert count successfully for applicant 12342: 0
+09-09-2024_14:38:42.015{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.015{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.015{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:42.024{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to count applied jobs for applicantId: 12342
+09-09-2024_14:38:42.091{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Counted applied jobs successfully for applicantId: 12342
+09-09-2024_14:38:42.092{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.092{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.092{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.092{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.092{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:42.092{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:42.095{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 12342
+09-09-2024_14:38:42.187{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 12342
+09-09-2024_14:38:42.322{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.322{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.322{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:42.322{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 12342
+09-09-2024_14:38:42.375{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 12342
+09-09-2024_14:38:42.522{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.522{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:42.522{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:42.522{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|Fetching profile view for applicantId: 12342
+09-09-2024_14:38:42.582{UTC}|report-tool|INFO ||c.t.c.ApplicantProfileController|Profile view fetched successfully for applicantId: 12342
+09-09-2024_14:38:45.804{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:45.804{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:38:45.804{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:38:45.804{UTC}|report-tool|INFO ||c.t.c.FindRecommendedJobController|Count of recommended jobs for applicant {} retrieved successfully: {}
+09-09-2024_14:43:55.117{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:43:55.121{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:43:55.121{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com
+09-09-2024_14:49:00.291{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+09-09-2024_14:49:00.307{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:49:00.307{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+09-09-2024_14:49:00.309{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+09-09-2024_14:49:00.312{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.11/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.11/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.11/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1674)
+ java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.11/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.11/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.11/java.lang.Thread.run(Thread.java:840)
+09-09-2024_14:49:00.313{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:49:00.316{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:49:00.328{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+09-09-2024_14:49:00.329{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+09-09-2024_14:49:00.337{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.
+09-09-2024_14:49:02.523{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+09-09-2024_14:49:02.542{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 17.0.11 on SYMP-LT1100 with PID 19932 (C:\Users\NAGUL\Desktop\New folder\TalentStreamBE\target\classes started by NAGUL in C:\Users\NAGUL\Desktop\New folder\TalentStreamBE)
+09-09-2024_14:49:02.542{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+09-09-2024_14:49:02.543{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+09-09-2024_14:49:03.237{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09-09-2024_14:49:03.321{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 76 ms. Found 21 JPA repository interfaces.
+09-09-2024_14:49:03.776{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+09-09-2024_14:49:03.783{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:49:03.783{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+09-09-2024_14:49:03.783{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+09-09-2024_14:49:03.871{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+09-09-2024_14:49:03.872{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 1289 ms
+09-09-2024_14:49:03.988{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+09-09-2024_14:49:04.019{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+09-09-2024_14:49:04.135{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09-09-2024_14:49:04.201{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+09-09-2024_14:49:04.757{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+09-09-2024_14:49:04.770{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+09-09-2024_14:49:09.104{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09-09-2024_14:49:09.112{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+09-09-2024_14:49:09.433{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+09-09-2024_14:49:09.465{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09-09-2024_14:49:09.659{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+09-09-2024_14:49:10.597{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7985c32f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56d9ef05, org.springframework.security.web.context.SecurityContextPersistenceFilter@502a9b30, org.springframework.security.web.header.HeaderWriterFilter@463c5d0f, org.springframework.security.web.authentication.logout.LogoutFilter@3b96ea23, com.talentstream.filter.JwtRequestFilter@776b7fa2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4494ed08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b6824c1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d487147, org.springframework.security.web.session.SessionManagementFilter@79dd79eb, org.springframework.security.web.access.ExceptionTranslationFilter@3ffa424d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4ad0465c]
+09-09-2024_14:49:10.764{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-8081"]
+09-09-2024_14:49:10.796{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+09-09-2024_14:49:11.409{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 9.182 seconds (JVM running for 9.937)
+09-09-2024_14:49:11.467{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+09-09-2024_14:49:11.468{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+09-09-2024_14:49:11.469{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 1 ms
+09-09-2024_14:49:11.484{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+09-09-2024_14:49:11.484{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+09-09-2024_14:49:11.484{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+09-09-2024_14:49:20.309{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:49:20.310{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWd1bG1lZXJhY3NAZ21haWwuY29tIiwiZXhwIjoxNzI1OTA4OTIxLCJpYXQiOjE3MjU4NzI5MjF9.wlUrJzk6Pf02FKfgfaeDdT844zSz_ZdXEmYmSYmAyow
+09-09-2024_14:49:20.310{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: nagulmeeracs@gmail.com

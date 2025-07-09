@@ -1,0 +1,1031 @@
+2024-04-29 12:55:38.590  INFO 10824 --- [main] c.talentstream.TalentStreamApplication   : Starting TalentStreamApplication using Java 17.0.10 on SYMP-LT1032 with PID 10824 (C:\Project_Folder\TalentStreamBE\target\classes started by Lalitha in C:\Project_Folder\TalentStreamBE)
+2024-04-29 12:55:38.594  INFO 10824 --- [main] c.talentstream.TalentStreamApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-04-29 12:55:40.940  INFO 10824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-29 12:55:41.103  INFO 10824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 17 JPA repository interfaces.
+2024-04-29 12:55:42.266  INFO 10824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2024-04-29 12:55:42.291  INFO 10824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-29 12:55:42.292  INFO 10824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2024-04-29 12:55:42.867  INFO 10824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-29 12:55:42.868  INFO 10824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4190 ms
+2024-04-29 12:55:43.427  INFO 10824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-29 12:55:43.738  INFO 10824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2024-04-29 12:55:44.293  INFO 10824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-04-29 12:55:45.417  INFO 10824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-29 12:55:46.537  INFO 10824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-29 12:55:46.655  INFO 10824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2024-04-29 12:55:54.303  INFO 10824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-04-29 12:55:54.355  INFO 10824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 12:55:55.326 DEBUG 10824 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-04-29 12:55:55.497  WARN 10824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-29 12:55:57.177 DEBUG 10824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 100 mappings in 'requestMappingHandlerMapping'
+2024-04-29 12:55:57.297 DEBUG 10824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-04-29 12:55:57.325 DEBUG 10824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/**] in 'resourceHandlerMapping'
+2024-04-29 12:55:57.415 DEBUG 10824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-04-29 12:55:57.468 DEBUG 10824 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-04-29 12:55:57.697  INFO 10824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43ef1243, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@386cc1c4, org.springframework.security.web.context.SecurityContextPersistenceFilter@296b758, org.springframework.security.web.header.HeaderWriterFilter@2b39e77d, org.springframework.security.web.authentication.logout.LogoutFilter@36b4cbb8, com.talentstream.filter.JwtRequestFilter@345d4ecb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ac0c3aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45d28ab7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e3c5ecc, org.springframework.security.web.session.SessionManagementFilter@188caeaf, org.springframework.security.web.access.ExceptionTranslationFilter@1b81a499, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3c380db5]
+2024-04-29 12:55:58.046  INFO 10824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2024-04-29 12:55:59.124  INFO 10824 --- [main] c.talentstream.TalentStreamApplication   : Started TalentStreamApplication in 21.207 seconds (JVM running for 23.88)
+2024-04-29 12:55:59.142 DEBUG 10824 --- [scheduling-1] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8081/health
+2024-04-29 12:55:59.144 DEBUG 10824 --- [scheduling-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/cbor, application/*+json, */*]
+2024-04-29 12:55:59.306  INFO 10824 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-29 12:55:59.307  INFO 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-29 12:55:59.307 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-04-29 12:55:59.307 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-04-29 12:55:59.308 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-04-29 12:55:59.309 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@140449d9
+2024-04-29 12:55:59.310 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6cf47d05
+2024-04-29 12:55:59.311 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-04-29 12:55:59.312  INFO 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-04-29 12:55:59.358 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/health", parameters={}
+2024-04-29 12:55:59.362 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.HealthController#healthCheck()
+2024-04-29 12:55:59.400 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [text/plain, application/json, application/cbor, application/*+json, */*] and supported [text/plain, */*, application/json, application/*+json, application/cbor]
+2024-04-29 12:55:59.401 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Server is up and running"]
+2024-04-29 12:55:59.422 DEBUG 10824 --- [scheduling-1] o.s.web.client.RestTemplate              : Response 200 OK
+2024-04-29 12:55:59.424 DEBUG 10824 --- [scheduling-1] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "text/plain;charset=ISO-8859-1"
+2024-04-29 12:55:59.424 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 12:56:42.459 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 12:56:42.462 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 12:56:42.481  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 12:56:42.521  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 12:56:42.522 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 12:56:42.522 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 12:56:42.539 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 12:57:42.338 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 12:57:42.339 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 12:57:42.340  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 12:57:42.377  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 12:57:42.377 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 12:57:42.378 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 12:57:42.379 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 12:58:42.970 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 12:58:42.971 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 12:58:42.972  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 12:58:43.000  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 12:58:43.001 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 12:58:43.002 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 12:58:43.003 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:00:25.891 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:00:25.893 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:00:25.894  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:00:25.923  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:00:25.924 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:00:25.924 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:00:25.926 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:01:26.121 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:01:26.122 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:01:26.123  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:01:26.155  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:01:26.156 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:01:26.156 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:01:26.157 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:02:26.072 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:02:26.073 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:02:26.074  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:02:26.105  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:02:26.106 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:02:26.106 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:02:26.107 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:03:08.181 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:03:08.182 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:03:08.183  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:03:08.213  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:03:08.214 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:03:08.214 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:03:08.215 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:03:42.286 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:03:42.287 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:03:42.288  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:03:42.570  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:03:42.570 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:03:42.570 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:03:42.572 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:04:42.931 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:04:42.932 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:04:42.933  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:04:43.208  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:04:43.209 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:04:43.209 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:04:43.210 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:06:26.188 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:06:26.189 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:06:26.190  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:06:26.232  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:06:26.233 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:06:26.233 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:06:26.234 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:07:25.902 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:07:25.903 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:07:25.903  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:07:25.936  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:07:25.937 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:07:25.937 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:07:25.938 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:08:25.890 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:08:25.891 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:08:25.892  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:08:25.924  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:08:25.925 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:08:25.925 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:08:25.926 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:09:25.892 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:09:25.893 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:09:25.894  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:09:25.926  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:09:25.927 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:09:25.927 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:09:25.928 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:10:25.910 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:10:25.911 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:10:25.911  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:10:25.944  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:10:25.945 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:10:25.945 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:10:25.946 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:11:25.903 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:11:25.904 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:11:25.904  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:11:25.942  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:11:25.943 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:11:25.943 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:11:25.943 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:12:25.880 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:12:25.881 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:12:25.881  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:12:25.913  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:12:25.913 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:12:25.913 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:12:25.914 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:13:25.914 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:13:25.915 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:13:25.915  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:13:25.944  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:13:25.945 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:13:25.945 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:13:25.946 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:14:25.887 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:14:25.888 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:14:25.888  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:14:25.924  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:14:25.925 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:14:25.925 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:14:25.925 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:15:25.875 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:15:25.875 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:15:25.876  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:15:25.909  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:15:25.909 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:15:25.910 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:15:25.910 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:16:25.891 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:16:25.892 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:16:25.892  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:16:25.921  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:16:25.922 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:16:25.922 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:16:25.923 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:17:25.881 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:17:25.882 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:17:25.883  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:17:25.916  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:17:25.917 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:17:25.917 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:17:25.918 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:18:25.884 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:18:25.885 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:18:25.886  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:18:25.918  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:18:25.919 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:18:25.919 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:18:25.920 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:19:10.529 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:19:10.529 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:19:10.530  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:19:10.572  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:19:10.573 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:19:10.573 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:19:10.573 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:19:42.978 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:19:42.980 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:19:42.981  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:19:43.015  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:19:43.015 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:19:43.016 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:19:43.017 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:21:25.901 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:21:25.902 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:21:25.903  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:21:26.183  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:21:26.184 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:21:26.184 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:21:26.185 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:22:25.940 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:22:25.942 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:22:25.943  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:22:25.977  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:22:25.984 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:22:25.984 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:22:25.985 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:23:25.906 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:23:25.906 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:23:25.907  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:23:25.949  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:23:25.950 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:23:25.950 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:23:25.951 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:24:25.883 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:24:25.884 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:24:25.884  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:24:25.920  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:24:25.921 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:24:25.921 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:24:25.922 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:25:25.882 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:25:25.884 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:25:25.884  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:25:25.914  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:25:25.914 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:25:25.914 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:25:25.915 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:26:25.892 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:26:25.893 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:26:25.893  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:26:25.923  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:26:25.924 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:26:25.924 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:26:25.925 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:27:25.885 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:27:25.886 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:27:25.886  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:27:25.922  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:27:25.923 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:27:25.923 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:27:25.924 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:28:25.888 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:28:25.889 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:28:25.889  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:28:25.920  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:28:25.921 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:28:25.921 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:28:25.922 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:29:25.879 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:29:25.880 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:29:25.880  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:29:25.917  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:29:25.917 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:29:25.917 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:29:25.918 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:30:25.872 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:30:25.873 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:30:25.874  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:30:25.901  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:30:25.901 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:30:25.902 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:30:25.902 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:31:25.928 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:31:25.928 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:31:25.929  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:31:25.958  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:31:25.958 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:31:25.959 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:31:25.959 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:32:26.357 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:32:26.358 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:32:26.359  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:32:26.388  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:32:26.388 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:32:26.389 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:32:26.390 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:33:26.685 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:33:26.686 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:33:26.686  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:33:26.714  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:33:26.714 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:33:26.715 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:33:26.715 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:34:26.158 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:34:26.159 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:34:26.160  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:34:26.189  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:34:26.190 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:34:26.190 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:34:26.191 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:35:25.938 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:35:25.939 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:35:25.940  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:35:25.969  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:35:25.970 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:35:25.970 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:35:25.970 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:36:26.160 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:36:26.161 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:36:26.161  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:36:26.190  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:36:26.191 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:36:26.191 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:36:26.192 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:37:26.176 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:37:26.177 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:37:26.177  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:37:26.207  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:37:26.207 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:37:26.208 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:37:26.208 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:38:25.870 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:38:25.871 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:38:25.872  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:38:25.902  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:38:25.902 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:38:25.903 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:38:25.903 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:39:26.132 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:39:26.133 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:39:26.133  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:39:26.162  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:39:26.162 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:39:26.163 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:39:26.163 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:40:25.875 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:40:25.876 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:40:25.876  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:40:26.153  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:40:26.153 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:40:26.153 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:40:26.154 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:41:25.883 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:41:25.884 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:41:25.884  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:41:25.913  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:41:25.913 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:41:25.913 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:41:25.914 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:42:25.871 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:42:25.872 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:42:25.873  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:42:26.163  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:42:26.164 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:42:26.164 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:42:26.164 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:43:25.869 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:43:25.870 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:43:25.870  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:43:25.898  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:43:25.899 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:43:25.899 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:43:25.900 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:44:25.889 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:44:25.890 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:44:25.890  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:44:25.924  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:44:25.924 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:44:25.924 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:44:25.925 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:45:26.134 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:45:26.135 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:45:26.136  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:45:26.168  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:45:26.169 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:45:26.169 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:45:26.170 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:46:25.889 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:46:25.890 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:46:25.891  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:46:25.924  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:46:25.925 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:46:25.925 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:46:25.926 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:47:26.629 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:47:26.630 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:47:26.630  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:47:27.020  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:47:27.021 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:47:27.021 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:47:27.022 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:48:26.724 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:48:26.725 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:48:26.725  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:48:26.757  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:48:26.757 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:48:26.757 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:48:26.758 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:49:25.874 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:49:25.875 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:49:25.875  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:49:25.910  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:49:25.911 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:49:25.911 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:49:25.912 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:50:25.912 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:50:25.913 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:50:25.913  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:50:25.952  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:50:25.953 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:50:25.953 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:50:25.954 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:51:25.901 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:51:25.902 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:51:25.902  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:51:25.937  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:51:25.937 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:51:25.937 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:51:25.938 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:52:25.894 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:52:25.895 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:52:25.895  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:52:25.925  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:52:25.925 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:52:25.925 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:52:25.926 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:53:25.920 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:53:25.921 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:53:25.921  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:53:25.950  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:53:25.950 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:53:25.950 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:53:25.951 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:54:26.127 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:54:26.127 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:54:26.128  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:54:26.156  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:54:26.157 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:54:26.157 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:54:26.157 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:55:25.881 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:55:25.882 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:55:25.883  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:55:25.912  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:55:25.912 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:55:25.912 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:55:25.913 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:56:25.908 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:56:25.909 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:56:25.909  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:56:25.939  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:56:25.939 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:56:25.940 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:56:25.940 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:57:25.895 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:57:25.895 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:57:25.896  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:57:25.929  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:57:25.930 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:57:25.930 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:57:25.930 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:58:25.879 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:58:25.879 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:58:25.880  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:58:25.937  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:58:25.938 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:58:25.938 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:58:25.938 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 13:59:25.898 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 13:59:25.899 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 13:59:25.899  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 13:59:25.930  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 13:59:25.930 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 13:59:25.931 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 13:59:25.931 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:00:25.868 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:00:25.869 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:00:25.870  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:00:25.900  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:00:25.900 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:00:25.900 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:00:25.901 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:01:25.909 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:01:25.910 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:01:25.911  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:01:25.940  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:01:25.941 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:01:25.941 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:01:25.941 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:02:25.905 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:02:25.906 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:02:25.906  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:02:25.938  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:02:25.939 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:02:25.939 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:02:25.939 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:03:25.873 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:03:25.874 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:03:25.874  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:03:25.903  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:03:25.904 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:03:25.904 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:03:25.904 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:04:25.876 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:04:25.877 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:04:25.877  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:04:25.906  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:04:25.907 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:04:25.907 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:04:25.907 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:05:25.879 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:05:25.880 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:05:25.880  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:05:25.908  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:05:25.909 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:05:25.909 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:05:25.910 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:06:25.877 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:06:25.878 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:06:25.878  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:06:25.921  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:06:25.922 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:06:25.922 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:06:25.922 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:07:25.876 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:07:25.877 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:07:25.877  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:07:25.906  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:07:25.906 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:07:25.906 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:07:25.907 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:08:25.885 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:08:25.885 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:08:25.886  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:08:25.921  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:08:25.922 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:08:25.922 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:08:25.923 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:17:44.471  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@fd05220 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.473  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4464414e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.474  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4b0a6795 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.475  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@46467d86 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.476  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@49ea32b0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.477  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@2f6274f2 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.478  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@374c8844 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.479  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@42936966 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.480  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@5a74ac36 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.482  WARN 10824 --- [http-nio-8081-exec-8] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@668d966e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+2024-04-29 14:17:44.909 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:17:44.910 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:17:44.910  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:17:44.943  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:17:44.943 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:17:44.943 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:17:44.944 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:17:51.238  WARN 10824 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m33s381ms46µs900ns).
+2024-04-29 14:18:25.856 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:18:25.857 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:18:25.857  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:18:25.890  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:18:25.890 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:18:25.890 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:18:25.891 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:19:25.858 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:19:25.859 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:19:25.860  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:19:25.888  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:19:25.888 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:19:25.888 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:19:25.889 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:20:25.862 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:20:25.863 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:20:25.863  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:20:25.891  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:20:25.892 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:20:25.892 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:20:25.892 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:21:25.906 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:21:25.907 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:21:25.908  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:21:25.936  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:21:25.937 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:21:25.937 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:21:25.937 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:22:25.904 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:22:25.905 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:22:25.906  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:22:25.933  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:22:25.934 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:22:25.934 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:22:25.935 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:23:25.888 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:23:25.888 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:23:25.888  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:23:25.917  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:23:25.918 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:23:25.918 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:23:25.919 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:24:25.841 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:24:25.842 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:24:25.842  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:24:25.871  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:24:25.871 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:24:25.871 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:24:25.872 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:25:25.863 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:25:25.864 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:25:25.864  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:25:25.894  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:25:25.895 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:25:25.895 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:25:25.896 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:26:25.841 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:26:25.842 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:26:25.843  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:26:25.875  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:26:25.875 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:26:25.876 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:26:25.876 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:27:25.842 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:27:25.842 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:27:25.843  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:27:25.871  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:27:25.872 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:27:25.872 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:27:25.873 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:28:25.853 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:28:25.854 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:28:25.854  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:28:25.886  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:28:25.887 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:28:25.887 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:28:25.888 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:29:25.843 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:29:25.843 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:29:25.844  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:29:25.871  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:29:25.871 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:29:25.872 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:29:25.872 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:30:25.901 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:30:25.902 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:30:25.902  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:30:25.931  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:30:25.932 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:30:25.932 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:30:25.933 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:31:25.843 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:31:25.844 DEBUG 10824 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:31:25.845  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:31:25.873  INFO 10824 --- [http-nio-8081-exec-5] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:31:25.873 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:31:25.874 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:31:25.874 DEBUG 10824 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:32:25.864 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:32:25.865 DEBUG 10824 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:32:25.865  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:32:25.893  INFO 10824 --- [http-nio-8081-exec-7] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:32:25.893 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:32:25.893 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:32:25.894 DEBUG 10824 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:33:25.846 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:33:25.847 DEBUG 10824 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:33:25.848  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:33:25.875  INFO 10824 --- [http-nio-8081-exec-9] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:33:25.875 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:33:25.875 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:33:25.876 DEBUG 10824 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:34:25.875 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:34:25.876 DEBUG 10824 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:34:25.876  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:34:25.904  INFO 10824 --- [http-nio-8081-exec-1] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:34:25.904 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:34:25.904 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:34:25.905 DEBUG 10824 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:35:25.846 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:35:25.847 DEBUG 10824 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:35:25.848  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:35:25.875  INFO 10824 --- [http-nio-8081-exec-3] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:35:25.876 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:35:25.876 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:35:25.877 DEBUG 10824 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:36:25.993 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:36:25.993 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:36:25.994  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:36:26.022  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:36:26.022 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:36:26.022 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:36:26.023 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:37:25.845 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:37:25.846 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:37:25.846  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:37:25.874  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:37:25.875 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:37:25.875 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:37:25.876 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:38:25.866 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:38:25.867 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:38:25.867  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:38:25.895  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:38:25.896 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:38:25.896 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:38:25.897 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:39:26.114 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:39:26.115 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:39:26.116  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:39:26.143  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:39:26.144 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:39:26.144 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:39:26.145 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:40:25.864 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:40:25.865 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:40:25.865  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:40:25.893  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:40:25.894 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:40:25.894 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:40:25.894 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:41:25.906 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:41:25.907 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:41:25.908  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:41:25.936  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:41:25.936 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:41:25.936 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:41:25.937 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:42:25.844 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:42:25.845 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:42:25.845  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:42:25.876  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:42:25.876 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:42:25.876 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:42:25.877 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:43:25.846 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:43:25.847 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:43:25.848  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:43:25.875  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:43:25.876 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:43:25.876 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:43:25.877 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:44:25.850 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:44:25.851 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:44:25.851  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:44:25.880  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:44:25.880 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:44:25.881 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:44:25.881 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:45:25.862 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:45:25.863 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:45:25.863  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:45:25.892  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:45:25.892 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:45:25.892 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:45:25.893 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:46:25.862 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:46:25.863 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:46:25.863  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:46:25.892  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:46:25.892 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:46:25.892 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:46:25.893 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:47:25.840 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:47:25.841 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:47:25.842  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:47:25.868  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:47:25.868 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:47:25.869 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:47:25.869 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:48:25.868 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:48:25.869 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:48:25.869  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:48:25.897  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:48:25.898 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:48:25.898 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:48:25.899 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:49:25.859 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:49:25.860 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:49:25.860  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:49:25.897  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:49:25.898 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:49:25.898 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:49:25.898 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:50:25.910 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:50:25.911 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:50:25.911  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:50:25.938  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:50:25.939 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:50:25.939 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:50:25.939 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:51:25.847 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:51:25.847 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:51:25.848  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:51:25.877  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:51:25.877 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:51:25.878 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:51:25.878 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:52:25.863 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:52:25.863 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:52:25.864  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:52:25.892  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:52:25.893 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:52:25.893 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:52:25.893 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:53:25.840 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:53:25.841 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:53:25.842  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:53:25.871  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:53:25.872 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:53:25.872 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:53:25.872 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:54:25.868 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:54:25.869 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:54:25.869  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:54:25.899  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:54:25.899 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:54:25.899 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:54:25.900 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:55:25.880 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:55:25.881 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:55:25.881  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:55:25.910  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:55:25.910 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:55:25.910 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:55:25.911 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:56:25.853 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:56:25.853 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:56:25.854  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:56:25.882  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:56:25.883 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:56:25.883 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:56:25.883 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:57:25.883 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:57:25.884 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:57:25.885  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:57:25.914  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:57:25.914 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:57:25.914 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:57:25.915 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:58:25.992 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:58:25.992 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:58:25.993  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:58:26.028  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:58:26.028 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:58:26.028 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:58:26.029 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 14:59:25.868 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 14:59:25.869 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 14:59:25.870  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 14:59:25.898  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 14:59:25.899 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 14:59:25.899 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 14:59:25.899 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:00:25.851 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:00:25.852 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:00:25.852  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:00:25.882  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:00:25.882 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:00:25.882 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:00:25.883 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:01:25.913 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:01:25.914 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:01:25.914  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:01:25.945  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:01:25.946 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:01:25.946 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:01:25.946 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:02:25.916 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:02:25.917 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:02:25.917  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:02:25.946  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:02:25.947 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:02:25.947 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:02:25.947 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:03:25.896 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:03:25.897 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:03:25.898  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:03:25.928  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:03:25.928 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:03:25.928 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:03:25.929 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:04:25.848 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:04:25.848 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:04:25.849  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:04:25.881  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:04:25.882 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:04:25.882 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:04:25.882 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:05:26.010 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:05:26.011 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:05:26.011  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:05:26.039  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:05:26.040 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:05:26.040 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:05:26.040 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:06:25.852 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:06:25.852 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:06:25.853  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:06:25.881  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:06:25.882 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:06:25.882 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:06:25.882 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:07:25.928 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:07:25.943 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:07:25.943  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:07:25.972  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:07:25.972 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:07:25.973 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:07:25.973 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:08:25.891 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:08:25.891 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:08:25.892  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:08:25.921  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:08:25.922 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:08:25.922 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:08:25.922 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:09:25.856 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:09:25.857 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:09:25.858  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:09:25.896  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:09:25.896 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:09:25.897 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:09:25.897 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:10:25.892 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:10:25.893 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:10:25.893  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:10:25.922  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:10:25.923 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:10:25.923 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:10:25.924 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:11:25.846 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:11:25.847 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:11:25.848  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:11:25.877  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:11:25.877 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:11:25.877 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:11:25.878 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:12:25.857 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:12:25.858 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:12:25.858  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:12:25.888  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:12:25.889 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:12:25.889 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:12:25.890 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:13:25.926 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:13:25.927 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:13:25.927  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:13:25.956  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:13:25.956 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:13:25.956 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:13:25.957 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:14:25.880 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:14:25.881 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:14:25.881  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:14:25.909  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:14:25.910 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:14:25.910 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:14:25.910 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:15:25.871 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:15:25.872 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:15:25.873  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:15:25.908  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:15:25.908 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:15:25.908 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:15:25.909 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:16:25.867 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:16:25.867 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:16:25.867  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:16:25.899  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:16:25.899 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:16:25.899 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:16:25.900 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:17:25.860 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:17:25.860 DEBUG 10824 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:17:25.861  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:17:25.913  INFO 10824 --- [http-nio-8081-exec-8] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:17:25.914 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:17:25.914 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:17:25.914 DEBUG 10824 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:18:25.960 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:18:25.960 DEBUG 10824 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:18:25.961  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:18:25.991  INFO 10824 --- [http-nio-8081-exec-10] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:18:25.991 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:18:25.991 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:18:25.992 DEBUG 10824 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:19:25.862 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:19:25.862 DEBUG 10824 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:19:25.863  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:19:25.892  INFO 10824 --- [http-nio-8081-exec-2] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:19:25.893 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:19:25.893 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:19:25.893 DEBUG 10824 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:20:25.878 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:20:25.878 DEBUG 10824 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:20:25.878  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:20:25.910  INFO 10824 --- [http-nio-8081-exec-4] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:20:25.910 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:20:25.910 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:20:25.911 DEBUG 10824 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:21:26.054 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/applyjob/applicants/3/unread-alert-count", parameters={}
+2024-04-29 15:21:26.055 DEBUG 10824 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.talentstream.controller.ApplyJobController#getUnreadAlertCount(long)
+2024-04-29 15:21:26.055  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Request received to get unread alert count for applicant 3
+2024-04-29 15:21:26.087  INFO 10824 --- [http-nio-8081-exec-6] c.t.c.ApplicantProfileController         : Retrieved unread alert count successfully for applicant 3: 0
+2024-04-29 15:21:26.088 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/cbor]
+2024-04-29 15:21:26.088 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [0]
+2024-04-29 15:21:26.088 DEBUG 10824 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-04-29 15:21:54.573  INFO 10824 --- [RMI TCP Connection(164)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-04-29 15:21:54.599  INFO 10824 --- [RMI TCP Connection(164)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-04-29 15:21:54.623  INFO 10824 --- [RMI TCP Connection(164)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-04-29 15:21:54.655  WARN 10824 --- [RMI TCP Connection(164)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.10/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.10/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.10/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.10/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.10/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.10/java.lang.Thread.run(Thread.java:840)
+2024-04-29 15:21:54.720  INFO 10824 --- [RMI TCP Connection(164)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-29 15:21:54.721  INFO 10824 --- [RMI TCP Connection(164)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-04-29 15:21:54.754  INFO 10824 --- [RMI TCP Connection(164)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

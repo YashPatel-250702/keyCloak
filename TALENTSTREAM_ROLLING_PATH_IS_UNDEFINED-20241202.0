@@ -1,0 +1,267 @@
+02-12-2024_12:38:20.913{UTC}|report-tool|INFO ||o.h.v.i.u.Version|HV000001: Hibernate Validator 6.2.5.Final
+02-12-2024_12:38:20.941{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Starting TalentStreamApplication using Java 17.0.6 on SYMP-LT1030 with PID 4760 (C:\Users\Madar\Desktop\EndToEnd_Bugsprint16\TalentStreamBE\target\classes started by Madar in C:\Users\Madar\Desktop\EndToEnd_Bugsprint16\TalentStreamBE)
+02-12-2024_12:38:20.941{UTC}|report-tool|DEBUG||c.t.TalentStreamApplication|Running with Spring Boot v2.7.9, Spring v5.3.25
+02-12-2024_12:38:20.942{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|No active profile set, falling back to 1 default profile: "default"
+02-12-2024_12:38:22.221{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-12-2024_12:38:22.381{UTC}|report-tool|INFO ||o.s.d.r.c.RepositoryConfigurationDelegate|Finished Spring Data repository scanning in 146 ms. Found 24 JPA repository interfaces.
+02-12-2024_12:38:23.073{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat initialized with port(s): 8081 (http)
+02-12-2024_12:38:23.085{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Initializing ProtocolHandler ["http-nio-8081"]
+02-12-2024_12:38:23.085{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Starting service [Tomcat]
+02-12-2024_12:38:23.085{UTC}|report-tool|INFO ||o.a.c.c.StandardEngine|Starting Servlet engine: [Apache Tomcat/9.0.71]
+02-12-2024_12:38:23.234{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring embedded WebApplicationContext
+02-12-2024_12:38:23.234{UTC}|report-tool|INFO ||o.s.b.w.s.c.ServletWebServerApplicationContext|Root WebApplicationContext: initialization completed in 2227 ms
+02-12-2024_12:38:23.422{UTC}|report-tool|INFO ||o.h.j.i.u.LogHelper|HHH000204: Processing PersistenceUnitInfo [name: default]
+02-12-2024_12:38:23.541{UTC}|report-tool|INFO ||o.h.Version|HHH000412: Hibernate ORM core version 5.6.15.Final
+02-12-2024_12:38:23.772{UTC}|report-tool|INFO ||o.h.a.c.Version|HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-12-2024_12:38:23.901{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Starting...
+02-12-2024_12:38:24.746{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Start completed.
+02-12-2024_12:38:24.784{UTC}|report-tool|INFO ||o.h.d.Dialect|HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+02-12-2024_12:38:28.057{UTC}|report-tool|WARN ||c.z.h.p.ProxyLeakTask|Connection leak detection triggered for org.postgresql.jdbc.PgConnection@51468039 on thread main, stack trace follows
+java.lang.Exception: Apparent connection leak detected
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:128)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:44)
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63)
+	at org.hibernate.tool.schema.extract.spi.ExtractionContext.getQueryResults(ExtractionContext.java:43)
+	at org.hibernate.tool.schema.extract.internal.SequenceInformationExtractorLegacyImpl.extractMetadata(SequenceInformationExtractorLegacyImpl.java:39)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.initializeSequences(DatabaseInformationImpl.java:66)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.<init>(DatabaseInformationImpl.java:60)
+	at org.hibernate.tool.schema.internal.Helper.buildDatabaseInformation(Helper.java:183)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:104)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:196)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveConstructorArguments(ConstructorResolver.java:693)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:374)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:134)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1707)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1452)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:213)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:176)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:171)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:156)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:87)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:262)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:236)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5211)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:835)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:265)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:430)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:930)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:486)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:481)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:184)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:577)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.talentstream.TalentStreamApplication.main(TalentStreamApplication.java:34)
+02-12-2024_12:38:32.847{UTC}|report-tool|INFO ||c.z.h.p.ProxyLeakTask|Previously reported leaked connection org.postgresql.jdbc.PgConnection@51468039 on thread main was returned to the pool (unleaked)
+02-12-2024_12:38:32.848{UTC}|report-tool|INFO ||o.h.e.t.j.p.i.JtaPlatformInitiator|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-12-2024_12:38:32.877{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-12-2024_12:38:33.330{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Filter 'jwtRequestFilter' configured for use
+02-12-2024_12:38:33.379{UTC}|report-tool|WARN ||o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-12-2024_12:38:33.901{UTC}|report-tool|DEBUG||c.t.c.ApplicantProfileController|ApplicantProfileController initialized
+02-12-2024_12:38:35.011{UTC}|report-tool|INFO ||o.s.s.w.DefaultSecurityFilterChain|Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@198fe398, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@511e0453, org.springframework.security.web.context.SecurityContextPersistenceFilter@432e242d, org.springframework.security.web.header.HeaderWriterFilter@72de1d86, org.springframework.security.web.authentication.logout.LogoutFilter@67add4c9, com.talentstream.filter.JwtRequestFilter@3c1fd5aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70f5f6c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@375dc95c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60ee6f76, org.springframework.security.web.session.SessionManagementFilter@3644d12a, org.springframework.security.web.access.ExceptionTranslationFilter@284e68ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e057374]
+02-12-2024_12:38:35.219{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Starting ProtocolHandler ["http-nio-8081"]
+02-12-2024_12:38:35.237{UTC}|report-tool|INFO ||o.s.b.w.e.t.TomcatWebServer|Tomcat started on port(s): 8081 (http) with context path ''
+02-12-2024_12:38:36.092{UTC}|report-tool|INFO ||c.t.TalentStreamApplication|Started TalentStreamApplication in 15.663 seconds (JVM running for 16.775)
+02-12-2024_12:38:36.171{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-12-2024_12:38:36.171{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Initializing Servlet 'dispatcherServlet'
+02-12-2024_12:38:36.171{UTC}|report-tool|INFO ||o.s.w.s.DispatcherServlet|Completed initialization in 0 ms
+02-12-2024_12:38:36.186{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+02-12-2024_12:38:36.186{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+02-12-2024_12:38:36.186{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+02-12-2024_12:38:40.749{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+02-12-2024_12:38:40.749{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+02-12-2024_12:38:40.749{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+02-12-2024_12:38:41.609{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+02-12-2024_12:38:41.609{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+02-12-2024_12:38:41.609{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+02-12-2024_12:38:41.644{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+02-12-2024_12:38:41.645{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+02-12-2024_12:38:41.645{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+02-12-2024_12:38:41.737{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.737{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.737{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.785{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.785{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.785{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.785{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.785{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.785{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.785{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to count selected applicants
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.800{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.800{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to count job applicants by recruiterId: 3
+02-12-2024_12:38:41.816{UTC}|report-tool|INFO ||c.t.c.CompanyLogoController|Company logo downloaded successfully for recruiter ID: 3
+02-12-2024_12:38:41.865{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Counted selected applicants successfully
+02-12-2024_12:38:41.880{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.880{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.880{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.886{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Counted job applicants successfully by recruiterId: 3
+02-12-2024_12:38:41.886{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.887{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.887{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.891{UTC}|report-tool|INFO ||c.t.c.JobController|Retrieved job count for recruiter with ID 3 successfully.
+02-12-2024_12:38:41.895{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get applicant job interview info for recruiterId: 3 with status: Interviewing
+02-12-2024_12:38:41.919{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.919{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.919{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.921{UTC}|report-tool|INFO ||c.t.c.CompanyLogoController|Company logo downloaded successfully for recruiter ID: 3
+02-12-2024_12:38:41.954{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved applicant job interview info successfully for recruiterId: 3 with status: Interviewing
+02-12-2024_12:38:41.965{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.965{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.965{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.965{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.966{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.966{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.967{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to count selected applicants
+02-12-2024_12:38:41.967{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to count job applicants by recruiterId: 3
+02-12-2024_12:38:41.979{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.979{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:41.979{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:41.979{UTC}|report-tool|INFO ||c.t.c.JobController|Retrieved inactive job counts for recruiter with ID 3 successfully.
+02-12-2024_12:38:42.012{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:42.012{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:42.012{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:42.012{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Request received to get applicant job interview info for recruiterId: 3 with status: Interviewing
+02-12-2024_12:38:42.027{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Counted selected applicants successfully
+02-12-2024_12:38:42.027{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Counted job applicants successfully by recruiterId: 3
+02-12-2024_12:38:42.045{UTC}|report-tool|INFO ||c.t.c.JobController|Retrieved job count for recruiter with ID 3 successfully.
+02-12-2024_12:38:42.045{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:42.045{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYWRhci5zYWhlYkB0ZWt3b3Jrcy5pbiIsImV4cCI6MTczMzE1OTMyMSwiaWF0IjoxNzMzMTIzMzIxfQ.q7ovswxTGsTTCssXB-cq1qFfBgNQe45808aBPBB9FiM
+02-12-2024_12:38:42.045{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: madar.saheb@tekworks.in
+02-12-2024_12:38:42.061{UTC}|report-tool|INFO ||c.t.c.ApplyJobController|Retrieved applicant job interview info successfully for recruiterId: 3 with status: Interviewing
+02-12-2024_12:38:42.204{UTC}|report-tool|INFO ||c.t.c.JobController|Retrieved inactive job counts for recruiter with ID 3 successfully.
+02-12-2024_13:42:03.072{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6f7a6e2e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_13:42:03.072{UTC}|report-tool|WARN ||c.z.h.p.HikariPool|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m37s583ms750µs300ns).
+02-12-2024_13:42:03.133{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@37c2f30e (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_13:42:03.196{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@bf5f0c6 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_13:42:03.243{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3467cc03 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_13:42:03.290{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@726edf6a (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_15:00:35.385{UTC}|report-tool|WARN ||c.z.h.p.HikariPool|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m1s221ms53µs700ns).
+02-12-2024_15:44:57.464{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+02-12-2024_15:44:57.465{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+02-12-2024_15:44:57.465{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+02-12-2024_16:49:30.341{UTC}|report-tool|WARN ||c.z.h.p.HikariPool|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m53s487ms643µs900ns).
+02-12-2024_16:54:37.389{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@4d2f3c81 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:54:53.895{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@3cb5d905 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:54:55.728{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@a96eec5 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:55:48.325{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@18f97363 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:56:09.561{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7a7693d4 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:56:16.645{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@6b366ab9 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:56:31.903{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@35ddb548 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:56:49.272{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@fab9b85 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_16:56:51.542{UTC}|report-tool|WARN ||c.z.h.p.PoolBase|HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@7f7a95a0 (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+02-12-2024_18:17:19.561{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Authorization Header: null
+02-12-2024_18:17:19.563{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|JWT: null
+02-12-2024_18:17:19.564{UTC}|report-tool|DEBUG||c.t.f.JwtRequestFilter|Username: null
+02-12-2024_18:50:39.013{UTC}|report-tool|INFO ||o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin|Application shutdown requested.
+02-12-2024_18:50:39.245{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Pausing ProtocolHandler ["http-nio-8081"]
+02-12-2024_18:50:39.246{UTC}|report-tool|INFO ||o.a.c.c.StandardService|Stopping service [Tomcat]
+02-12-2024_18:50:39.261{UTC}|report-tool|INFO ||o.a.c.c.C.[.[.[/]|Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-12-2024_18:50:39.300{UTC}|report-tool|WARN ||o.a.c.l.WebappClassLoaderBase|The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.6/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.6/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.6/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.6/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.6/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.6/java.lang.Thread.run(Thread.java:833)
+02-12-2024_18:50:39.310{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Stopping ProtocolHandler ["http-nio-8081"]
+02-12-2024_18:50:39.323{UTC}|report-tool|INFO ||o.a.c.h.Http11NioProtocol|Destroying ProtocolHandler ["http-nio-8081"]
+02-12-2024_18:50:39.388{UTC}|report-tool|INFO ||o.s.o.j.LocalContainerEntityManagerFactoryBean|Closing JPA EntityManagerFactory for persistence unit 'default'
+02-12-2024_18:50:39.433{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown initiated...
+02-12-2024_18:50:39.448{UTC}|report-tool|INFO ||c.z.h.HikariDataSource|HikariPool-1 - Shutdown completed.

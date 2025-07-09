@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+  
+  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+  
+  <!-- Console Appender -->
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <Pattern>%d{dd-MM-yyyy_HH:mm:ss.SSS}{UTC}|report-tool|%-5p|%X{Slf4jMDCFilter.UUID}|%c{1}|%msg%n</Pattern>
+    </encoder>
+  </appender>
+ 
+  <!-- Rolling File Appender for All Logs -->
+<!-- <appender name="ALLFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d{dd-MM-yyyy_HH:mm:ss.SSS}{UTC}|report-tool|%-5p|%X{Slf4jMDCFilter.UUID}|%c{1}|%msg%n</Pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>/log/all/app-%d{yyyyMMdd}.rar</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+  </appender>-->
+ 
+  <!-- Rolling File Appender for Specific Package -->
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+      <Pattern>%d{dd-MM-yyyy_HH:mm:ss.SSS}{UTC}|report-tool|%-5p|%X{Slf4jMDCFilter.UUID}|%c{1}|%msg%n</Pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <fileNamePattern>${TALENTSTREAM_ROLLING_PATH}-%d{yyyyMMdd}.%i.gz</fileNamePattern>
+       <maxFileSize>10MB</maxFileSize>
+      <maxHistory>30</maxHistory>
+      <totalSizeCap>1GB</totalSizeCap>
+    </rollingPolicy>
+  </appender>
+ 
+  <logger name="com.talentstream" level="DEBUG" additivity="false">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="STDOUT" />
+  </logger>
+ 
+  <logger name="com.talentstream.controller" level="DEBUG" additivity="false">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="STDOUT" />
+ </logger>
+ 
+  <!-- Root Logger Configuration -->
+  <root level="INFO">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="STDOUT" />
+  </root>
+ 
+</configuration>
