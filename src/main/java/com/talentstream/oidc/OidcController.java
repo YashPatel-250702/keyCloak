@@ -15,6 +15,10 @@ import java.util.*;
 @RequestMapping("/oidc")
 public class OidcController {
 
+	
+	private static final String VALID_CLIENT_ID = "moodle";
+	private static final String VALID_CLIENT_SECRET = "my-moodle-secret";
+	
     @Autowired
     private JwtUtil jwtUtil;
 
@@ -65,18 +69,27 @@ public class OidcController {
             @RequestParam String grant_type,
             @RequestParam String code,
             @RequestParam String client_id,
+            @RequestParam String client_secret,
             @RequestParam String redirect_uri
     ) {
+        // Validate grant type
         if (!"authorization_code".equals(grant_type)) {
             return ResponseEntity.badRequest().body("Unsupported grant_type");
         }
 
+        // Validate client credentials
+        if (!VALID_CLIENT_ID.equals(client_id) || !VALID_CLIENT_SECRET.equals(client_secret)) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid client credentials");
+        }
+
+        // Validate and consume code
         String email = authCodeService.consumeAuthCode(code);
         if (email == null) {
             return ResponseEntity.badRequest().body("Invalid or expired code");
         }
 
-        User user = new User(email, "", new ArrayList<>()); // No roles needed here
+        // Generate JWT
+        User user = new User(email, "", new ArrayList<>());
         String jwt = jwtUtil.generateToken(user);
 
         Map<String, Object> res = new HashMap<>();
@@ -86,6 +99,7 @@ public class OidcController {
 
         return ResponseEntity.ok(res);
     }
+
 
     // 3. Moodle calls this to get user details
     @GetMapping("/userinfo")
