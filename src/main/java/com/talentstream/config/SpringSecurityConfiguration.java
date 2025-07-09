@@ -93,7 +93,7 @@ class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 						"/applicant/applicantverify-otp", "/applicant/applicantreset-password/{email}",
 						"/applicant/applicantsignOut", "/applicant/forgotpasswordsendotp", "/swagger-ui/**",
-						"/v3/api-docs/**", "/swagger-resources/**", "/webjars/**","/getAllJobs","/api/zoho/submit-lead","/zoho/create-lead","/zoho/update/{recordId}","/zoho/searchlead/{email}")
+						"/v3/api-docs/**", "/swagger-resources/**", "/webjars/**","/getAllJobs","/api/zoho/submit-lead","/zoho/create-lead","/zoho/update/{recordId}","/zoho/searchlead/{email}","/oidc/**")
 				.permitAll()
 				// Additional antMatchers for Swagger
 				.antMatchers(HttpMethod.GET, "/v2/api-docs", "/swagger-ui/**", "/swagger-resources/**", "/webjars/**")
